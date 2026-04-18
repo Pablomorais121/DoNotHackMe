@@ -5,7 +5,7 @@ function endTurn(gameState){
         player: {
             ...gameState.player,
             budget: gameState.player.budget + 100,
-            actionPoints: gameState.player.maxActionPoints
+            actionPoints: gameState.player.maxActionPoints,
         }
     }
 }

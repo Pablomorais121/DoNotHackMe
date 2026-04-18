@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import GameBoard from './components/GameBoard'
 
 const initialState = {
   turn: 1,
@@ -10,7 +11,7 @@ const initialState = {
     redTeam: {level: 1, actions: ['recon']},
     blueTeam: {level: 1, actions: ['monitor']},
   },
-  rival: {
+  enemy: {
     hp: 100,
   },
   log: []
@@ -19,7 +20,7 @@ const initialState = {
 function App() {
   const [gameState, setGameState] = useState(initialState)
 
-  return <div>DoNotHackMe</div>
+  return <GameBoard gameState={gameState}/>
 }
 
 export default App
