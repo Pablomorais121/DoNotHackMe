@@ -6,6 +6,7 @@ const initialState = {
     hp: 100,
     budget: 0,
     actionPoints: 2,
+    maxActionPoints: 2,
     redTeam: {level: 1, actions: ['recon']},
     blueTeam: {level: 1, actions: ['monitor']},
   },
