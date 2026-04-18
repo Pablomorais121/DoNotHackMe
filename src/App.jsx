@@ -8,8 +8,8 @@ const initialState = {
     budget: 0,
     actionPoints: 2,
     maxActionPoints: 2,
-    redTeam: {level: 1, actions: ['recon']},
-    blueTeam: {level: 1, actions: ['monitor']},
+    redTeam: {level: 1, actions: ['action_red_recon']},
+    blueTeam: {level: 1, actions: ['action_blue_monitor']},
   },
   enemy: {
     hp: 100,
