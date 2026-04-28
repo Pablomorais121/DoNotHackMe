@@ -6,6 +6,7 @@ const handlers = {
 }
 
 export function reducer(state, action) {
+    console.log('action:', action)
     const handler = handlers[action.type]
     return handler ? handler(state,action.payload) : state
 }

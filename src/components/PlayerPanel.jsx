@@ -1,5 +1,8 @@
+import { useGame } from "../context/GameContext"
 
-function PlayerPanel({player}){
+function PlayerPanel(){
+    const {gameState} = useGame()
+    const player = gameState.player
     return (
         <div>
             <p>---------------------</p>

@@ -1,5 +1,9 @@
-function EnemyPanel({enemy}){
-    return (
+import { useGame } from "../context/GameContext"
+
+
+function EnemyPanel(){
+    const {gameState: {enemy}} = useGame()
+    return ( 
         <div>
             <p>---------------------</p>
             <p>Enemy data</p>
