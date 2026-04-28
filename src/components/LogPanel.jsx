@@ -4,7 +4,7 @@ function LogPanel(){
     const {gameState: {log}} = useGame()
     return (
         <div>
-            <p>{log}</p>
+            <p>Log: {log}</p>
         </div>
     )
 }

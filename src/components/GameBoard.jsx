@@ -5,7 +5,7 @@ import LogPanel from "./LogPanel"
 import { useGame } from "../context/GameContext"
 
 function GameBoard() {
-    const {gameState} = useGame()
+    const {gameState, dispatch} = useGame()
     return (
         <div>
             <PlayerPanel player={gameState.player} />
@@ -13,6 +13,9 @@ function GameBoard() {
             <ActionPanel team={gameState.player.redTeam}/>
             <ActionPanel team={gameState.player.blueTeam}/>
             <LogPanel info={gameState.log}/>
+            <button onClick={() => dispatch({type: 'END_TURN'})}>
+                    END TURN
+                </button>
         </div>
     )
 }
