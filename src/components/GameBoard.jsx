@@ -2,8 +2,10 @@ import PlayerPanel from "./PlayerPanel"
 import EnemyPanel from "./EnemyPanel"
 import ActionPanel from "./ActionPanel"
 import LogPanel from "./LogPanel"
+import { useGame } from "../context/GameContext"
 
-function GameBoard({ gameState}) {
+function GameBoard() {
+    const {gameState} = useGame()
     return (
         <div>
             <PlayerPanel player={gameState.player} />

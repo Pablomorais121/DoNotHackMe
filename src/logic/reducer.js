@@ -5,9 +5,8 @@ const handlers = {
     END_TURN: (state) => endTurn(state)
 }
 
-function reducer(state, action) {
+export function reducer(state, action) {
     const handler = handlers[action.type]
     return handler ? handler(state,action.payload) : state
 }
 
-export function reducer
