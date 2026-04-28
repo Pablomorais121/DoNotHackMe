@@ -10,4 +10,11 @@ function endTurn(gameState){
     }
 }
 
+function addAction(gameState, actionId){
+    return{
+        ...gameState,
+        actionQueue: [...gameState.actionQueue, actionId]
+    }
+}
+
 export default endTurn

@@ -14,7 +14,8 @@ const initialState = {
   enemy: {
     hp: 100,
   },
-  log: []
+  log: [],
+  actionQueue: []
 }
 
 function App() {
