@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import GameBoard from './components/GameBoard'
+import {addAction} from './logic/gameLogic'
 
 const initialState = {
   turn: 1,
@@ -24,4 +25,10 @@ function App() {
   return <GameBoard gameState={gameState}/>
 }
 
+function handleAddAction(actionId){
+  setGameState(gameState => addAction(gameState, actionId))
+}
+
 export default App
+
+return <GameBoard gameState={gameState} onAddAction={handleAddAction}/>

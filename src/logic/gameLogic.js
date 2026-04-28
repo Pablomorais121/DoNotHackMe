@@ -1,5 +1,5 @@
 
-function endTurn(gameState){
+export function endTurn(gameState){
     return {
         ...gameState,
         player: {
@@ -10,11 +10,10 @@ function endTurn(gameState){
     }
 }
 
-function addAction(gameState, actionId){
+export function addAction(gameState, actionId){
     return{
         ...gameState,
         actionQueue: [...gameState.actionQueue, actionId]
     }
 }
 
-export default endTurn
